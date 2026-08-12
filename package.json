@@ -1,0 +1,31 @@
+{
+  "name": "gauss-www",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Import-ready Gauss subsite framework for df12-www",
+  "type": "module",
+  "scripts": {
+    "build": "bun run build:static && bun run build:css",
+    "build:static": "node scripts/prepare-static.mjs",
+    "build:css": "tailwindcss -i src/styles/gauss.css -o .build/gauss/assets/tailwind.css --minify",
+    "build:dev": "bun run build && make preview",
+    "dev": "bunx concurrently -k -n watch,serve -c blue,green \"bunx chokidar-cli 'src/**/*' 'templates/**/*' 'config/**/*' 'scripts/**/*' 'package.json' '../df12-www/df12_pages/**/*' '../df12-www/config/shared/**/*' '../df12-www/config/pages.yaml' '../df12-www/pyproject.toml' --initial -i '**/*.pyc' -i '**/__pycache__/**' -c 'bun run build:dev'\" \"bunx http-server .preview -p ${DF12_PORT:-8080} -c-1\"",
+    "check:fmt": "biome format scripts src",
+    "fmt": "biome format --write scripts src",
+    "lint": "biome lint scripts src",
+    "typecheck": "tsc --project jsconfig.json",
+    "markdownlint": "markdownlint-cli2 \"**/*.md\" \"#node_modules\""
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.8",
+    "@tailwindcss/cli": "^4.3.3",
+    "@types/node": "26.2.0",
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^10.0.3",
+    "daisyui": "^5.7.16",
+    "http-server": "^14.1.1",
+    "markdownlint-cli2": "0.23.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "7.0.2"
+  }
+}

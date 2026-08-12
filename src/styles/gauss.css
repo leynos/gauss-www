@@ -1,0 +1,450 @@
+@import "tailwindcss";
+
+@source "../../templates/gauss/**/*.jinja";
+
+@plugin "daisyui" {
+  themes: gauss --default;
+  logs: false;
+}
+
+@plugin "daisyui/theme" {
+  name: "gauss";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-primary: #2457c5;
+  --color-primary-content: #ffffff;
+  --color-secondary: #e85131;
+  --color-secondary-content: #ffffff;
+  --color-accent: #5faf72;
+  --color-accent-content: #102717;
+  --color-neutral: #111c2a;
+  --color-neutral-content: #f8fafc;
+  --color-base-100: #fcfcfd;
+  --color-base-200: #f3f5f8;
+  --color-base-300: #d8dde5;
+  --color-base-content: #1e2428;
+  --color-info: #2457c5;
+  --color-info-content: #ffffff;
+  --color-success: #367a48;
+  --color-success-content: #ffffff;
+  --color-warning: #8a5c00;
+  --color-warning-content: #ffffff;
+  --color-error: #b93328;
+  --color-error-content: #ffffff;
+
+  --radius-selector: 0.375rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.625rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@theme {
+  --font-display:
+    "STIX Two Text", "Iowan Old Style", "Palatino Linotype", serif;
+  --font-interface: "IBM Plex Sans", "Aptos", system-ui, sans-serif;
+  --font-code: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  --color-guide: #aeb8c8;
+  --color-path-soft: #c9d5ef;
+  --color-focus-outer: #111c2a;
+  --shadow-editor: 0 18px 50px rgb(30 36 40 / 14%);
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background: var(--color-base-100);
+  }
+
+  body {
+    margin: 0;
+    color: var(--color-base-content);
+    font-family: var(--font-interface);
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-block-start: 0;
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.035em;
+  }
+
+  a {
+    text-underline-offset: 0.22em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-focus-outer);
+    outline-offset: 5px;
+    box-shadow: 0 0 0 2px var(--color-base-100);
+  }
+
+  [id] {
+    scroll-margin-top: 7rem;
+  }
+}
+
+@layer components {
+  .gauss-page {
+    @apply min-h-screen bg-base-100 text-base-content;
+  }
+
+  .gauss-skip-link {
+    @apply fixed start-4 top-4 z-50 -translate-y-24 rounded-field bg-neutral px-4 py-3 font-semibold text-neutral-content no-underline;
+  }
+
+  .gauss-skip-link:focus {
+    @apply translate-y-0;
+  }
+
+  .gauss-header {
+    @apply sticky top-0 z-40 border-b border-base-300/80 bg-base-100/95 backdrop-blur;
+  }
+
+  .gauss-header__inner,
+  .gauss-footer__inner {
+    @apply mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-2 px-5 py-4 sm:flex-nowrap sm:gap-6 sm:px-8;
+  }
+
+  .gauss-brand {
+    @apply inline-flex shrink-0 items-center gap-3 text-base-content no-underline;
+  }
+
+  .gauss-brand__mark {
+    @apply size-9;
+  }
+
+  .gauss-brand__name {
+    @apply font-display text-2xl;
+  }
+
+  .gauss-nav {
+    @apply w-full overflow-x-auto sm:w-auto;
+  }
+
+  .gauss-nav__list,
+  .gauss-footer__links {
+    @apply m-0 flex list-none items-center gap-1 p-0;
+  }
+
+  .gauss-nav__list {
+    @apply justify-between sm:justify-start;
+  }
+
+  .gauss-nav__link {
+    @apply inline-flex min-h-11 items-center whitespace-nowrap rounded-field px-2 text-xs text-base-content no-underline hover:bg-base-200 sm:px-3 sm:text-sm;
+  }
+
+  .gauss-main {
+    @apply overflow-clip;
+  }
+
+  .gauss-hero,
+  .gauss-section,
+  .gauss-closing {
+    @apply mx-auto grid w-full max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:py-24;
+  }
+
+  .gauss-hero {
+    @apply items-center lg:grid-cols-[minmax(20rem,0.8fr)_minmax(28rem,1.2fr)];
+  }
+
+  .gauss-representations {
+    @apply mb-8 w-fit;
+  }
+
+  .gauss-hero h1 {
+    @apply max-w-2xl text-5xl leading-[0.98] sm:text-6xl lg:text-7xl;
+  }
+
+  .gauss-hero__lede {
+    @apply mt-7 max-w-xl text-lg leading-8 text-base-content/80;
+  }
+
+  .gauss-hero__actions {
+    @apply mt-8 flex flex-wrap gap-3;
+  }
+
+  .gauss-action {
+    @apply min-h-12 px-6;
+  }
+
+  .gauss-representations .tab-active {
+    @apply text-primary;
+  }
+
+  .gauss-status-rail {
+    @apply mt-8 grid list-none gap-3 border-t border-base-300 p-0 pt-5 text-xs text-base-content/70 sm:grid-cols-2;
+  }
+
+  .gauss-status-rail li {
+    @apply before:me-2 before:text-primary before:content-['◇'];
+  }
+
+  .gauss-specimen {
+    @apply m-0;
+  }
+
+  .gauss-specimen__art {
+    @apply block h-auto w-full;
+  }
+
+  .gauss-specimen figcaption {
+    @apply mt-2 text-center font-code text-xs text-base-content/65;
+  }
+
+  .gauss-specimen__guides {
+    fill: none;
+    stroke: var(--color-guide);
+    stroke-dasharray: 5 8;
+    stroke-width: 1;
+  }
+
+  .gauss-specimen__leaves {
+    fill: color-mix(in oklab, var(--color-primary) 8%, white);
+    stroke: var(--color-path-soft);
+    stroke-width: 2;
+  }
+
+  .gauss-specimen__letter {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 4;
+  }
+
+  .gauss-specimen__handles {
+    fill: var(--color-base-100);
+    stroke: var(--color-secondary);
+    stroke-dasharray: 6 5;
+    stroke-width: 2;
+  }
+
+  .gauss-specimen__nodes {
+    fill: var(--color-base-100);
+    stroke: var(--color-primary);
+    stroke-width: 2;
+  }
+
+  .gauss-section {
+    @apply border-t border-base-300/70 lg:grid-cols-[minmax(16rem,0.55fr)_minmax(30rem,1.45fr)];
+  }
+
+  .gauss-section__copy h2,
+  .gauss-automation h2 {
+    @apply text-4xl leading-tight sm:text-5xl;
+  }
+
+  .gauss-section__copy p {
+    @apply max-w-md text-base leading-7 text-base-content/75;
+  }
+
+  .gauss-editor-proof {
+    @apply overflow-hidden border border-base-300 bg-base-100 shadow-editor;
+  }
+
+  .gauss-editor-proof__canvas {
+    @apply bg-base-100 p-6;
+  }
+
+  .gauss-editor-proof svg {
+    @apply block w-full;
+  }
+
+  .gauss-editor-proof__stem,
+  .gauss-editor-proof__leaf {
+    fill: color-mix(in oklab, var(--color-primary) 7%, white);
+    stroke: var(--color-primary);
+    stroke-width: 3;
+  }
+
+  .gauss-editor-proof__stem,
+  .gauss-editor-proof__handle {
+    fill: none;
+  }
+
+  .gauss-editor-proof__handle,
+  .gauss-editor-proof__point {
+    stroke: var(--color-secondary);
+    stroke-width: 2;
+  }
+
+  .gauss-editor-proof__point {
+    fill: var(--color-base-100);
+  }
+
+  .gauss-editor-proof__caption {
+    @apply border-t border-base-300 bg-base-200 px-5 py-3 text-xs text-base-content/65;
+  }
+
+  .gauss-port-map {
+    @apply grid items-stretch gap-4 sm:grid-cols-2;
+  }
+
+  .gauss-port {
+    @apply bg-base-100 shadow-none;
+  }
+
+  .gauss-port--model {
+    @apply border-primary sm:col-span-2 sm:mx-auto sm:w-2/3;
+  }
+
+  .gauss-port[data-status="partial"] {
+    border-style: dashed;
+  }
+
+  .gauss-port[data-status="planned"] {
+    @apply bg-base-200/50 text-base-content/70;
+    border-style: dotted;
+  }
+
+  .gauss-kicker {
+    @apply font-code text-xs font-semibold uppercase tracking-[0.16em] text-primary;
+  }
+
+  .gauss-file__comparison {
+    @apply grid overflow-hidden rounded-box border border-base-300 bg-base-100 md:grid-cols-2;
+  }
+
+  .gauss-file__art {
+    @apply flex min-h-64 items-center p-6;
+  }
+
+  .gauss-file__art svg {
+    @apply w-full;
+  }
+
+  .gauss-file__art path {
+    fill: color-mix(in oklab, var(--color-primary) 7%, white);
+    stroke: var(--color-primary);
+    stroke-width: 3;
+  }
+
+  .gauss-file__art circle {
+    fill: var(--color-base-100);
+    stroke: var(--color-primary);
+    stroke-width: 3;
+  }
+
+  .gauss-file__code {
+    @apply min-h-64 rounded-none border-s border-base-300 text-xs;
+  }
+
+  .gauss-automation {
+    @apply bg-neutral text-neutral-content;
+  }
+
+  .gauss-automation__inner {
+    @apply mx-auto grid w-full max-w-7xl gap-8 px-5 py-16 sm:px-8 lg:grid-cols-[0.7fr_1.3fr] lg:py-20;
+  }
+
+  .gauss-automation p {
+    @apply text-neutral-content/75;
+  }
+
+  .gauss-command-map {
+    @apply grid items-center gap-3 rounded-box border border-neutral-content/20 bg-black/20 p-5 font-code text-xs sm:grid-cols-[1fr_auto_1fr_auto_0.7fr];
+  }
+
+  .gauss-command-map code {
+    @apply rounded-field bg-neutral-content/10 p-3 text-neutral-content;
+  }
+
+  .gauss-automation__notice {
+    @apply font-code text-xs uppercase tracking-wider lg:col-start-2;
+  }
+
+  .gauss-closing {
+    @apply lg:grid-cols-3;
+  }
+
+  .gauss-closing article {
+    @apply border-s border-base-300 ps-5;
+  }
+
+  .gauss-closing h2 {
+    @apply font-display text-2xl;
+  }
+
+  .gauss-closing p {
+    @apply text-sm leading-6 text-base-content/70;
+  }
+
+  .gauss-prose {
+    @apply mx-auto w-full max-w-3xl px-5 py-16 text-base leading-8 sm:px-8 lg:py-24;
+  }
+
+  .gauss-prose h1 {
+    @apply text-5xl leading-tight sm:text-6xl;
+  }
+
+  .gauss-prose h2 {
+    @apply mt-14 text-3xl;
+  }
+
+  .gauss-prose a,
+  .gauss-footer a,
+  .gauss-closing a {
+    @apply font-semibold text-primary underline;
+  }
+
+  .gauss-page-heading {
+    @apply mb-14;
+  }
+
+  .gauss-footer {
+    @apply border-t border-base-300 bg-base-200;
+  }
+
+  .gauss-footer__inner {
+    @apply flex-col items-start py-10 text-sm lg:flex-row lg:items-center;
+  }
+
+  .gauss-footer__links {
+    @apply flex-wrap gap-5;
+  }
+
+  .gauss-footer__signoff {
+    @apply text-base-content/65;
+  }
+}
+
+/* This unlayered semantic override follows daisyUI's layered tab defaults. */
+.gauss-representations.tabs .tab:not(.tab-active) {
+  color: color-mix(in oklab, var(--color-base-content) 80%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media (forced-colors: active) {
+  .gauss-specimen__letter,
+  .gauss-specimen__handles,
+  .gauss-specimen__nodes,
+  .gauss-editor-proof path,
+  .gauss-editor-proof circle {
+    stroke: CanvasText;
+  }
+}

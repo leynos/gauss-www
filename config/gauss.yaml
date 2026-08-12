@@ -1,0 +1,38 @@
+# Merge this mapping beneath `sites:` in df12-www/config/pages.yaml.
+gauss:
+  output_dir: public/gauss
+  templates_dir: templates/gauss
+  stylesheet: assets/tailwind.css
+  base_path: /gauss/
+  theme:
+    site_name: Gauss
+    hero_tagline: The document is the interface
+  parent_link:
+    label: "df12 Productions"
+    href: /
+  nav_links:
+    - label: Why
+      href: /gauss/#why
+    - label: Drawing
+      href: /gauss/#drawing
+    - label: Architecture
+      href: /gauss/#architecture
+    - label: Roadmap
+      href: /gauss/roadmap/
+    - label: GitHub
+      href: https://github.com/leynos/gauss
+  shared_content:
+    - terms-of-use
+    - privacy-policy
+    - code-of-conduct
+  homepage:
+    title: "Gauss — the document is the interface"
+  template_vars:
+    site_status: "Phase 0 proof of concept"
+    repository_url: "https://github.com/leynos/gauss"
+  content_pages:
+    - key: roadmap
+      label: Roadmap
+      template: pages/roadmap.jinja
+      output_slug: roadmap
+  pages: {}

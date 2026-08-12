@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-GB" data-theme="gauss">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>{% block title %}Gauss{% endblock %}</title>
+    <meta name="description" content="{% block description %}Gauss is an open-source vector illustration application built around one document model.{% endblock %}" />
+    <link rel="icon" href="/gauss/assets/gauss-logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/gauss/{{ stylesheet or 'assets/tailwind.css' }}" />
+  </head>
+  <body class="gauss-page">
+    <a class="gauss-skip-link" href="#main-content">Skip to content</a>
+
+    <header class="gauss-header">
+      <div class="gauss-header__inner">
+        <a class="gauss-brand" href="/gauss/" aria-label="Gauss home">
+          <img class="gauss-brand__mark" src="/gauss/assets/gauss-logo.svg" alt="" />
+          <span class="gauss-brand__name">Gauss</span>
+        </a>
+
+        <nav class="gauss-nav" aria-label="Primary">
+          <ul class="gauss-nav__list">
+            {% for link in nav_links %}
+            <li>
+              <a class="gauss-nav__link" href="{{ link.href }}"{% if link.current %} aria-current="page"{% endif %}>{{ link.label }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="gauss-main" tabindex="-1">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="gauss-footer">
+      <div class="gauss-footer__inner">
+        <p><strong>Gauss</strong> is a <a href="{{ parent_link.href if parent_link else '/' }}">df12 Productions</a> project.</p>
+        <nav aria-label="Legal">
+          <ul class="gauss-footer__links">
+            <li><a href="/gauss/privacy-policy/">Privacy policy</a></li>
+            <li><a href="/gauss/terms-of-use/">Terms of use</a></li>
+            <li><a href="/gauss/code-of-conduct/">Code of Conduct</a></li>
+          </ul>
+        </nav>
+        <p class="gauss-footer__signoff">&copy; {{ generated_at.year }} df12 Productions. Serious tools, playful worlds.</p>
+      </div>
+    </footer>
+  </body>
+</html>

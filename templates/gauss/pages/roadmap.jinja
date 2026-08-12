@@ -1,0 +1,41 @@
+{% extends "_layout.jinja" %}
+
+{% block title %}Roadmap — Gauss{% endblock %}
+{% block description %}The current, hand-curated delivery state and product direction for Gauss.{% endblock %}
+
+{% block content %}
+  <article class="gauss-prose gauss-roadmap">
+    <header class="gauss-page-heading">
+      <p class="gauss-kicker">Current state</p>
+      <h1>Build the instrument in public</h1>
+      <p>
+        Gauss is a Phase 0 proof of concept. This page separates capabilities
+        available in the current repository from product direction.
+      </p>
+    </header>
+
+    <section aria-labelledby="working-now">
+      <h2 id="working-now">Working now</h2>
+      <ul>
+        <li>Path drawing and manipulation.</li>
+        <li>Line and automatic Bézier modes.</li>
+        <li>Fill and stroke editing.</li>
+        <li>SVG import and export.</li>
+        <li>Document and selection history.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="direction">
+      <h2 id="direction">Direction</h2>
+      <p>
+        Typography, advanced geometry, scripting, deeper document
+        accessibility, and broader platform support remain roadmap work.
+      </p>
+      <p>
+        <a href="{{ repository_url }}/issues">Inspect active Gauss work on GitHub</a>.
+        Issue titles provide implementation detail; this page remains curated
+        product copy.
+      </p>
+    </section>
+  </article>
+{% endblock %}
