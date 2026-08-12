@@ -41,23 +41,23 @@ The site should repeatedly return to this idea.
 
 ### Suggested hero copy
 
-**Eyebrow**
+#### Eyebrow
 
 `OPEN-SOURCE VECTOR ILLUSTRATION · PHASE 0`
 
-**Headline**
+#### Headline
 
 > **Vector illustration, open all the way down.**
 
-**Supporting copy**
+#### Supporting copy
 
 > Gauss is an open-source SVG editor being built so direct manipulation, keyboard and assistive technology, and scripts can operate on the same document model. Precision drawing without a privileged input method.
 
-**Primary CTA**
+#### Primary CTA
 
 `Explore Gauss`
 
-**Secondary CTA**
+#### Secondary CTA
 
 `View source on GitHub`
 
@@ -90,7 +90,7 @@ Gauss should be the **precision instrument** in that collection.
 
 ---
 
-# 4. Creative concept: The Coordinate Atelier
+## 4. Creative concept: The Coordinate Atelier
 
 The visual language should combine:
 
@@ -123,7 +123,7 @@ The website should feel as though somebody has temporarily left a beautifully ty
 
 ---
 
-# 5. Hero art direction
+## 5. Hero art direction
 
 The hero should contain a **real piece of vector artwork**, not merely a screenshot of application chrome.
 
@@ -148,7 +148,7 @@ That makes the homepage itself a quiet visual changelog.
 
 ---
 
-# 6. Signature visual motif
+## 6. Signature visual motif
 
 Use an oversized editable curve as the recurrent graphic device.
 
@@ -169,33 +169,39 @@ It becomes a metaphor for the central thesis: **the object is the same even when
 
 ---
 
-# 7. Colour system
+## 7. Colour system
 
 Use a mostly light, paper-like interface. Gauss should contrast with darker technical product sites without becoming sterile.
 
 ### Core palette
 
-**Plotter paper**
+#### Plotter paper
+
 `#F4F0E6`
 Primary background.
 
-**Graphite**
+#### Graphite
+
 `#1E2428`
 Primary text, rules and technical marks.
 
-**Cobalt**
+#### Cobalt
+
 `#2457C5`
 Primary interactive colour, selected paths, links and focus states.
 
-**Vermilion**
+#### Vermilion
+
 `#E85131`
 Anchor points, warnings and expressive accents. Use decoratively or for large text rather than normal small text on the pale background.
 
-**Instrument green**
+#### Instrument green
+
 `#5FAF72`
 Successful checks, accessibility states and secondary plotted geometry.
 
-**Construction grey**
+#### Construction grey
+
 A family of low-contrast cool greys for grids, rulers and inactive guides.
 
 Avoid rainbow-colouring every feature. The page should feel like a working drawing with a few annotation inks, not a packet of Stabilos detonating.
@@ -204,25 +210,25 @@ Dark sections may invert paper and graphite for code or architecture diagrams, b
 
 ---
 
-# 8. Typography
+## 8. Typography
 
 Use three complementary voices.
 
 ### Display and editorial
 
-**STIX Two Text**
+#### STIX Two Text
 
 It brings mathematical publishing DNA without turning the site into faux-Victorian scholarship. Use it for major headlines, large pull quotes and occasional mathematical labels.
 
 ### Interface and prose
 
-**IBM Plex Sans**
+#### IBM Plex Sans
 
 Neutral, technical and highly legible. Use for body copy, navigation and explanatory labels.
 
 ### Code and coordinates
 
-**IBM Plex Mono**
+#### IBM Plex Mono
 
 Use for SVG, coordinates, commands, status metadata, figure numbering and small engineering annotations.
 
@@ -230,9 +236,9 @@ Typography should have the confidence to become very large. A hero with a 72–9
 
 ---
 
-# 9. Page structure
+## 9. Page structure
 
-## A. Navigation
+### A. Navigation
 
 Suggested top-level navigation:
 
@@ -250,7 +256,7 @@ The Gauss wordmark itself should contain a small vector-path motif, perhaps the 
 
 ---
 
-## B. Hero
+### B. Hero
 
 As specified above:
 
@@ -268,35 +274,35 @@ The first viewport must answer five questions immediately:
 
 ---
 
-## C. “One document. Every way in.”
+### C. “One document. Every way in.”
 
 This should be the conceptual centrepiece.
 
 Show the same object through three synchronized representations.
 
-### 01 · Draw
+#### 01 · Draw
 
 A fragment of the Gauss canvas with selected anchor points.
 
-**Direct manipulation**
+##### Direct manipulation
 
 > Draw, select and reshape vectors without surrendering the underlying geometry.
 
-### 02 · Navigate
+#### 02 · Navigate
 
 An abstract representation of the accessible object/interface tree with keyboard focus moving through it.
 
-**Accessible interaction**
+##### Accessible interaction
 
 > Commands, controls and document structure should remain operable without requiring pixel-perfect pointer interaction.
 
 Do not claim that the complete canvas is screen-reader accessible before the corresponding object-level accessibility work lands. The roadmap explicitly treats that as an evolving capability.
 
-### 03 · Script
+#### 03 · Script
 
 A compact Python API concept alongside the same selected object.
 
-**Programmable workflow**
+##### Programmable workflow
 
 > The architecture is being designed so user-facing commands can also become scripting primitives.
 
@@ -306,7 +312,7 @@ The visual punchline is that all three panels connect to a single central docume
 
 ---
 
-# 10. “SVG is not the export format”
+## 10. “SVG is not the export format”
 
 Suggested headline:
 
@@ -327,7 +333,7 @@ Avoid claims such as “perfect SVG round-tripping” unless tests and implement
 
 ---
 
-# 11. Accessibility section
+## 11. Accessibility section
 
 Suggested headline:
 
@@ -361,7 +367,7 @@ The website itself must exemplify this standard.
 
 ---
 
-# 12. Automation and scripting section
+## 12. Automation and scripting section
 
 Suggested headline:
 
@@ -390,7 +396,7 @@ Do not market Gauss as “AI-powered”. The interesting architectural choice is
 
 ---
 
-# 13. Architecture section
+## 13. Architecture section
 
 Suggested headline:
 
@@ -423,7 +429,7 @@ Avoid making the implementation language the hero. “Written in Rust” support
 
 ---
 
-# 14. Current state and roadmap
+## 14. Current state and roadmap
 
 Borrow mxd's admirable refusal to pretend incomplete work is complete.
 
@@ -457,7 +463,7 @@ Do not turn the roadmap into a feature-checkbox arms race. Group it by product c
 
 ---
 
-# 15. Getting started
+## 15. Getting started
 
 Because Gauss remains early-stage software, this section should be aimed at **contributors and experimenters**, not pretend there is already a frictionless consumer installer.
 
@@ -477,7 +483,7 @@ Eventually this becomes `Download Gauss` when packaged releases justify it.
 
 ---
 
-# 16. Motion and interaction
+## 16. Motion and interaction
 
 Motion should reveal structure rather than decorate the page.
 
@@ -495,7 +501,7 @@ Respect `prefers-reduced-motion`, provide keyboard equivalents for every interac
 
 ---
 
-# 17. Responsive behaviour
+## 17. Responsive behaviour
 
 Desktop can lean into the drafting-board metaphor with marginal coordinates, generous whitespace and asymmetrical compositions.
 
@@ -509,7 +515,7 @@ No horizontal scrolling should be required for the page itself. Code examples ma
 
 ---
 
-# 18. Accessibility requirements for the website
+## 18. Accessibility requirements for the website
 
 The Gauss site has less licence than most sites to get this wrong.
 
@@ -531,7 +537,7 @@ The accessibility section should itself work exceptionally well with a screen re
 
 ---
 
-# 19. Things to avoid
+## 19. Things to avoid
 
 ### Do not imitate Illustrator
 
@@ -566,7 +572,7 @@ Potential LLM control belongs downstream of the scripting model. The site's stor
 
 ---
 
-# 20. df12 integration
+## 20. df12 integration
 
 The existing df12 home configuration already contains a Gauss card described as:
 
@@ -592,7 +598,7 @@ or, more compactly:
 
 ---
 
-# 21. Implementation approach
+## 21. Implementation approach
 
 Implement Gauss as a first-class df12 sub-site rather than a standalone microsite.
 
@@ -627,7 +633,7 @@ Keep JavaScript progressive and small. The hero should still communicate the pro
 
 ---
 
-# 22. Initial deliverables
+## 22. Initial deliverables
 
 For the first implementation, produce:
 
@@ -649,7 +655,7 @@ Deeper Architecture, Accessibility and Automation routes can initially reuse and
 
 ---
 
-# 23. Desired impression
+## 23. Desired impression
 
 A visitor should leave thinking:
 
@@ -664,4 +670,3 @@ A developer should want to inspect the architecture.
 An accessibility specialist should recognize that they have been invited into the design process before the concrete has set.
 
 And the whole thing should still have enough df12 peculiar charm to avoid resembling software procured by a committee that has recently discovered rounded rectangles.
-
