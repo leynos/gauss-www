@@ -161,6 +161,8 @@ ______________________________________________________________________
 Radix sets **state** through data attributes. Tailwind v4 can target them
 directly.
 
+<!-- markdownlint-disable MD013 -->
+
 ```tsx
 // Dialog with daisyUI look, Radix behaviour
 import * as Dialog from "@radix-ui/react-dialog";
@@ -191,6 +193,8 @@ export function ExampleDialog() {
   );
 }
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 Other handy Radix states:
 
@@ -264,6 +268,8 @@ Instead, combine `@apply` (for the static bits) with explicit selectors for
 stateful styles. This keeps the markup clean *and* ensures Radix data
 attributes toggle the look correctly:
 
+<!-- markdownlint-disable MD013 -->
+
 ```css
 .interest-chip {
   @apply inline-flex items-center gap-2 rounded-full border border-base-300/60 bg-base-200/60 px-4 py-2 text-sm font-medium text-base-content/70 transition;
@@ -277,6 +283,8 @@ attributes toggle the look correctly:
   @apply text-base-content;
 }
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 Markup stays semantic:
 

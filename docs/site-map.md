@@ -376,9 +376,13 @@ status, phase, evidence link, and last-reviewed fields; a foundation timeline;
 and links to accepted ADRs. One status record should drive both this route and
 the homepage summary.
 
+<!-- markdownlint-disable MD013 -->
+
 **Internal links:**
 [Overview](#1-overview--gauss), [Drawing](#12-drawing-should-still-feel-like-drawing--drawing), [Architecture](#13-one-document-every-way-in--architecture), [SVG](#14-the-file-is-already-yours--file), [Accessibility](#15-accessibility-is-an-architecture-decision--accessibility),
 and [Automation](#16-if-it-can-be-clicked-it-should-be-callable--automation).
+
+<!-- markdownlint-enable MD013 -->
 
 ### 3. Terms of use — `/gauss/terms-of-use/`
 

@@ -397,9 +397,13 @@ src/
 
 #### Display
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 block, inline-block, inline, flex, inline-flex, table, inline-table, table-caption, table-cell, table-column, table-column-group, table-footer-group, table-header-group, table-row-group, table-row, flow-root, grid, inline-grid, contents, list-item, hidden
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Position
 
@@ -409,12 +413,16 @@ static, fixed, absolute, relative, sticky
 
 #### Top/Right/Bottom/Left
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 inset-0, inset-x-0, inset-y-0, start-0, end-0, top-0, right-0, bottom-0, left-0
 inset-px, inset-x-px, inset-y-px, start-px, end-px, top-px, right-px, bottom-px, left-px
 inset-0.5, inset-1, inset-1.5, inset-2, inset-2.5, inset-3, inset-3.5, inset-4, inset-5, inset-6, inset-7, inset-8, inset-9, inset-10, inset-11, inset-12, inset-14, inset-16, inset-20, inset-24, inset-28, inset-32, inset-36, inset-40, inset-44, inset-48, inset-52, inset-56, inset-60, inset-64, inset-72, inset-80, inset-96
 inset-auto, inset-1/2, inset-1/3, inset-2/3, inset-1/4, inset-2/4, inset-3/4, inset-full
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Visibility & Z-Index
 
@@ -459,17 +467,27 @@ grow, grow-0, shrink, shrink-0
 
 #### Order
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 order-1, order-2, order-3, order-4, order-5, order-6, order-7, order-8, order-9, order-10, order-11, order-12, order-first, order-last, order-none
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Grid Template Columns
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 grid-cols-1, grid-cols-2, grid-cols-3, grid-cols-4, grid-cols-5, grid-cols-6, grid-cols-7, grid-cols-8, grid-cols-9, grid-cols-10, grid-cols-11, grid-cols-12, grid-cols-none, grid-cols-subgrid
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Grid Column Start/End
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 col-auto, col-span-1, col-span-2, col-span-3, col-span-4, col-span-5, col-span-6, col-span-7, col-span-8, col-span-9, col-span-10, col-span-11, col-span-12, col-span-full
@@ -477,13 +495,21 @@ col-start-1, col-start-2, col-start-3, col-start-4, col-start-5, col-start-6, co
 col-end-1, col-end-2, col-end-3, col-end-4, col-end-5, col-end-6, col-end-7, col-end-8, col-end-9, col-end-10, col-end-11, col-end-12, col-end-13, col-end-auto
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Grid Template Rows
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 grid-rows-1, grid-rows-2, grid-rows-3, grid-rows-4, grid-rows-5, grid-rows-6, grid-rows-7, grid-rows-8, grid-rows-9, grid-rows-10, grid-rows-11, grid-rows-12, grid-rows-none, grid-rows-subgrid
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Grid Row Start/End
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 row-auto, row-span-1, row-span-2, row-span-3, row-span-4, row-span-5, row-span-6, row-span-7, row-span-8, row-span-9, row-span-10, row-span-11, row-span-12, row-span-full
@@ -491,14 +517,22 @@ row-start-1, row-start-2, row-start-3, row-start-4, row-start-5, row-start-6, ro
 row-end-1, row-end-2, row-end-3, row-end-4, row-end-5, row-end-6, row-end-7, row-end-8, row-end-9, row-end-10, row-end-11, row-end-12, row-end-13, row-end-auto
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Gap
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 gap-0, gap-x-0, gap-y-0, gap-px, gap-x-px, gap-y-px
 gap-0.5, gap-1, gap-1.5, gap-2, gap-2.5, gap-3, gap-3.5, gap-4, gap-5, gap-6, gap-7, gap-8, gap-9, gap-10, gap-11, gap-12, gap-14, gap-16, gap-20, gap-24, gap-28, gap-32, gap-36, gap-40, gap-44, gap-48, gap-52, gap-56, gap-60, gap-64, gap-72, gap-80, gap-96
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Justify & Align
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 justify-normal, justify-start, justify-end, justify-center, justify-between, justify-around, justify-evenly, justify-stretch
@@ -512,16 +546,24 @@ place-items-start, place-items-end, place-items-center, place-items-baseline, pl
 place-self-auto, place-self-start, place-self-end, place-self-center, place-self-stretch
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 ### Spacing
 
 #### Padding
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 p-0, p-px, p-0.5, p-1, p-1.5, p-2, p-2.5, p-3, p-3.5, p-4, p-5, p-6, p-7, p-8, p-9, p-10, p-11, p-12, p-14, p-16, p-20, p-24, p-28, p-32, p-36, p-40, p-44, p-48, p-52, p-56, p-60, p-64, p-72, p-80, p-96
 px-0, py-0, pl-0, pr-0, pt-0, pb-0, ps-0, pe-0
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Margin
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 m-0, m-px, m-0.5, m-1, m-1.5, m-2, m-2.5, m-3, m-3.5, m-4, m-5, m-6, m-7, m-8, m-9, m-10, m-11, m-12, m-14, m-16, m-20, m-24, m-28, m-32, m-36, m-40, m-44, m-48, m-52, m-56, m-60, m-64, m-72, m-80, m-96, m-auto
@@ -529,46 +571,72 @@ mx-0, my-0, ml-0, mr-0, mt-0, mb-0, ms-0, me-0
 -m-0, -m-px, -m-0.5, -m-1, -m-1.5, -m-2, -m-2.5, -m-3, -m-3.5, -m-4, -m-5, -m-6, -m-7, -m-8, -m-9, -m-10, -m-11, -m-12, -m-14, -m-16, -m-20, -m-24, -m-28, -m-32, -m-36, -m-40, -m-44, -m-48, -m-52, -m-56, -m-60, -m-64, -m-72, -m-80, -m-96
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Space Between
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 space-x-0, space-x-px, space-x-0.5, space-x-1, space-x-1.5, space-x-2, space-x-2.5, space-x-3, space-x-3.5, space-x-4, space-x-5, space-x-6, space-x-7, space-x-8, space-x-9, space-x-10, space-x-11, space-x-12, space-x-14, space-x-16, space-x-20, space-x-24, space-x-28, space-x-32, space-x-36, space-x-40, space-x-44, space-x-48, space-x-52, space-x-56, space-x-60, space-x-64, space-x-72, space-x-80, space-x-96, space-x-reverse
 space-y-0, space-y-px, space-y-0.5, space-y-1, space-y-1.5, space-y-2, space-y-2.5, space-y-3, space-y-3.5, space-y-4, space-y-5, space-y-6, space-y-7, space-y-8, space-y-9, space-y-10, space-y-11, space-y-12, space-y-14, space-y-16, space-y-20, space-y-24, space-y-28, space-y-32, space-y-36, space-y-40, space-y-44, space-y-48, space-y-52, space-y-56, space-y-60, space-y-64, space-y-72, space-y-80, space-y-96, space-y-reverse
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 ### Sizing
 
 #### Width
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 w-0, w-px, w-0.5, w-1, w-1.5, w-2, w-2.5, w-3, w-3.5, w-4, w-5, w-6, w-7, w-8, w-9, w-10, w-11, w-12, w-14, w-16, w-20, w-24, w-28, w-32, w-36, w-40, w-44, w-48, w-52, w-56, w-60, w-64, w-72, w-80, w-96, w-auto, w-1/2, w-1/3, w-2/3, w-1/4, w-2/4, w-3/4, w-1/5, w-2/5, w-3/5, w-4/5, w-1/6, w-2/6, w-3/6, w-4/6, w-5/6, w-1/12, w-2/12, w-3/12, w-4/12, w-5/12, w-6/12, w-7/12, w-8/12, w-9/12, w-10/12, w-11/12, w-full, w-screen, w-svw, w-lvw, w-dvw, w-min, w-max, w-fit
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Height
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 h-0, h-px, h-0.5, h-1, h-1.5, h-2, h-2.5, h-3, h-3.5, h-4, h-5, h-6, h-7, h-8, h-9, h-10, h-11, h-12, h-14, h-16, h-20, h-24, h-28, h-32, h-36, h-40, h-44, h-48, h-52, h-56, h-60, h-64, h-72, h-80, h-96, h-auto, h-1/2, h-1/3, h-2/3, h-1/4, h-2/4, h-3/4, h-1/5, h-2/5, h-3/5, h-4/5, h-1/6, h-2/6, h-3/6, h-4/6, h-5/6, h-full, h-screen, h-svh, h-lvh, h-dvh, h-min, h-max, h-fit
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Size (Width + Height)
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 size-0, size-px, size-0.5, size-1, size-1.5, size-2, size-2.5, size-3, size-3.5, size-4, size-5, size-6, size-7, size-8, size-9, size-10, size-11, size-12, size-14, size-16, size-20, size-24, size-28, size-32, size-36, size-40, size-44, size-48, size-52, size-56, size-60, size-64, size-72, size-80, size-96, size-auto, size-1/2, size-1/3, size-2/3, size-1/4, size-2/4, size-3/4, size-1/5, size-2/5, size-3/5, size-4/5, size-1/6, size-2/6, size-3/6, size-4/6, size-5/6, size-1/12, size-2/12, size-3/12, size-4/12, size-5/12, size-6/12, size-7/12, size-8/12, size-9/12, size-10/12, size-11/12, size-full, size-min, size-max, size-fit
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Min/Max Width
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 min-w-0, min-w-full, min-w-min, min-w-max, min-w-fit
 max-w-0, max-w-xs, max-w-sm, max-w-md, max-w-lg, max-w-xl, max-w-2xl, max-w-3xl, max-w-4xl, max-w-5xl, max-w-6xl, max-w-7xl, max-w-full, max-w-min, max-w-max, max-w-fit, max-w-prose, max-w-screen-sm, max-w-screen-md, max-w-screen-lg, max-w-screen-xl, max-w-screen-2xl
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Min/Max Height
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 min-h-0, min-h-full, min-h-screen, min-h-svh, min-h-lvh, min-h-dvh, min-h-min, min-h-max, min-h-fit
 max-h-0, max-h-px, max-h-0.5, max-h-1, max-h-1.5, max-h-2, max-h-2.5, max-h-3, max-h-3.5, max-h-4, max-h-5, max-h-6, max-h-7, max-h-8, max-h-9, max-h-10, max-h-11, max-h-12, max-h-14, max-h-16, max-h-20, max-h-24, max-h-28, max-h-32, max-h-36, max-h-40, max-h-44, max-h-48, max-h-52, max-h-56, max-h-60, max-h-64, max-h-72, max-h-80, max-h-96, max-h-full, max-h-screen, max-h-svh, max-h-lvh, max-h-dvh, max-h-min, max-h-max, max-h-fit
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 ### Typography
 
@@ -604,9 +672,13 @@ normal-nums, ordinal, slashed-zero, lining-nums, oldstyle-nums, proportional-num
 
 #### Font Stretch (NEW in v4)
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 font-stretch-ultra-condensed, font-stretch-extra-condensed, font-stretch-condensed, font-stretch-semi-condensed, font-stretch-normal, font-stretch-semi-expanded, font-stretch-expanded, font-stretch-extra-expanded, font-stretch-ultra-expanded
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Letter Spacing
 
@@ -622,9 +694,13 @@ line-clamp-1, line-clamp-2, line-clamp-3, line-clamp-4, line-clamp-5, line-clamp
 
 #### Line Height
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 leading-3, leading-4, leading-5, leading-6, leading-7, leading-8, leading-9, leading-10, leading-none, leading-tight, leading-snug, leading-normal, leading-relaxed, leading-loose
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### List Style
 
@@ -639,6 +715,8 @@ text-left, text-center, text-right, text-justify, text-start, text-end
 ```
 
 #### Text Colour
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 text-inherit, text-current, text-transparent, text-black, text-white
@@ -665,6 +743,8 @@ text-fuchsia-50, text-fuchsia-100, text-fuchsia-200, text-fuchsia-300, text-fuch
 text-pink-50, text-pink-100, text-pink-200, text-pink-300, text-pink-400, text-pink-500, text-pink-600, text-pink-700, text-pink-800, text-pink-900, text-pink-950
 text-rose-50, text-rose-100, text-rose-200, text-rose-300, text-rose-400, text-rose-500, text-rose-600, text-rose-700, text-rose-800, text-rose-900, text-rose-950
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Text Decoration
 
@@ -780,11 +860,15 @@ bg-linear-to-t, bg-linear-to-tr, bg-linear-to-r, bg-linear-to-br, bg-linear-to-b
 
 #### Enhanced Gradients (NEW in v4)
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 bg-linear-0, bg-linear-45, bg-linear-90, bg-linear-135, bg-linear-180, bg-linear-225, bg-linear-270, bg-linear-315
 bg-radial, bg-radial-at-t, bg-radial-at-tr, bg-radial-at-r, bg-radial-at-br, bg-radial-at-b, bg-radial-at-bl, bg-radial-at-l, bg-radial-at-tl, bg-radial-at-c
 bg-conic, bg-conic-at-t, bg-conic-at-tr, bg-conic-at-r, bg-conic-at-br, bg-conic-at-b, bg-conic-at-bl, bg-conic-at-l, bg-conic-at-tl, bg-conic-at-c
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Gradient Colour Stops
 
@@ -797,6 +881,8 @@ to-inherit, to-current, to-transparent, to-black, to-white, to-{color}
 ### Borders
 
 #### Border Radius
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 rounded-none, rounded-xs, rounded-sm, rounded, rounded-md, rounded-lg, rounded-xl, rounded-2xl, rounded-3xl, rounded-full
@@ -816,6 +902,8 @@ rounded-br-none, rounded-br-xs, rounded-br-sm, rounded-br, rounded-br-md, rounde
 rounded-bl-none, rounded-bl-xs, rounded-bl-sm, rounded-bl, rounded-bl-md, rounded-bl-lg, rounded-bl-xl, rounded-bl-2xl, rounded-bl-3xl
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Border Width
 
 ```text
@@ -834,9 +922,13 @@ border-solid, border-dashed, border-dotted, border-double, border-hidden, border
 
 #### Divide Width
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 divide-x-0, divide-x-2, divide-x-4, divide-x-8, divide-x, divide-y-0, divide-y-2, divide-y-4, divide-y-8, divide-y, divide-x-reverse, divide-y-reverse
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Divide Colour
 
@@ -910,21 +1002,33 @@ drop-shadow-sm, drop-shadow, drop-shadow-md, drop-shadow-lg, drop-shadow-xl, dro
 
 #### Opacity
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 opacity-0, opacity-5, opacity-10, opacity-15, opacity-20, opacity-25, opacity-30, opacity-35, opacity-40, opacity-45, opacity-50, opacity-55, opacity-60, opacity-65, opacity-70, opacity-75, opacity-80, opacity-85, opacity-90, opacity-95, opacity-100
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Mix Blend Mode
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 mix-blend-normal, mix-blend-multiply, mix-blend-screen, mix-blend-overlay, mix-blend-darken, mix-blend-lighten, mix-blend-color-dodge, mix-blend-color-burn, mix-blend-hard-light, mix-blend-soft-light, mix-blend-difference, mix-blend-exclusion, mix-blend-hue, mix-blend-saturation, mix-blend-color, mix-blend-luminosity, mix-blend-plus-darker, mix-blend-plus-lighter
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Background Blend Mode
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 bg-blend-normal, bg-blend-multiply, bg-blend-screen, bg-blend-overlay, bg-blend-darken, bg-blend-lighten, bg-blend-color-dodge, bg-blend-color-burn, bg-blend-hard-light, bg-blend-soft-light, bg-blend-difference, bg-blend-exclusion, bg-blend-hue, bg-blend-saturation, bg-blend-color, bg-blend-luminosity
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 ### Filters
 
@@ -936,9 +1040,13 @@ blur-none, blur-xs, blur-sm, blur, blur-md, blur-lg, blur-xl, blur-2xl, blur-3xl
 
 #### Brightness
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 brightness-0, brightness-50, brightness-75, brightness-90, brightness-95, brightness-100, brightness-105, brightness-110, brightness-125, brightness-150, brightness-200
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Contrast
 
@@ -954,9 +1062,13 @@ grayscale-0, grayscale
 
 #### Hue Rotate
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 hue-rotate-0, hue-rotate-15, hue-rotate-30, hue-rotate-60, hue-rotate-90, hue-rotate-180, -hue-rotate-180, -hue-rotate-90, -hue-rotate-60, -hue-rotate-30, -hue-rotate-15
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Invert
 
@@ -978,21 +1090,33 @@ sepia-0, sepia
 
 #### Backdrop Blur
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 backdrop-blur-none, backdrop-blur-xs, backdrop-blur-sm, backdrop-blur, backdrop-blur-md, backdrop-blur-lg, backdrop-blur-xl, backdrop-blur-2xl, backdrop-blur-3xl
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Backdrop Brightness
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 backdrop-brightness-0, backdrop-brightness-50, backdrop-brightness-75, backdrop-brightness-90, backdrop-brightness-95, backdrop-brightness-100, backdrop-brightness-105, backdrop-brightness-110, backdrop-brightness-125, backdrop-brightness-150, backdrop-brightness-200
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Backdrop Contrast
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 backdrop-contrast-0, backdrop-contrast-50, backdrop-contrast-75, backdrop-contrast-100, backdrop-contrast-125, backdrop-contrast-150, backdrop-contrast-200
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Backdrop Grayscale
 
@@ -1002,9 +1126,13 @@ backdrop-grayscale-0, backdrop-grayscale
 
 #### Backdrop Hue Rotate
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 backdrop-hue-rotate-0, backdrop-hue-rotate-15, backdrop-hue-rotate-30, backdrop-hue-rotate-60, backdrop-hue-rotate-90, backdrop-hue-rotate-180, -backdrop-hue-rotate-180, -backdrop-hue-rotate-90, -backdrop-hue-rotate-60, -backdrop-hue-rotate-30, -backdrop-hue-rotate-15
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Backdrop Invert
 
@@ -1090,10 +1218,14 @@ border-collapse, border-separate
 
 #### Border Spacing
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 border-spacing-0, border-spacing-px, border-spacing-0.5, border-spacing-1, border-spacing-1.5, border-spacing-2, border-spacing-2.5, border-spacing-3, border-spacing-3.5, border-spacing-4, border-spacing-5, border-spacing-6, border-spacing-7, border-spacing-8, border-spacing-9, border-spacing-10, border-spacing-11, border-spacing-12, border-spacing-14, border-spacing-16, border-spacing-20, border-spacing-24, border-spacing-28, border-spacing-32, border-spacing-36, border-spacing-40, border-spacing-44, border-spacing-48, border-spacing-52, border-spacing-56, border-spacing-60, border-spacing-64, border-spacing-72, border-spacing-80, border-spacing-96
 border-spacing-x-0, border-spacing-y-0 (and all other spacing values)
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Table Layout
 
@@ -1125,29 +1257,45 @@ scale-z-0, scale-z-50, scale-z-75, scale-z-90, scale-z-95, scale-z-100, scale-z-
 
 #### Rotate
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 rotate-0, rotate-1, rotate-2, rotate-3, rotate-6, rotate-12, rotate-45, rotate-90, rotate-180, -rotate-180, -rotate-90, -rotate-45, -rotate-12, -rotate-6, -rotate-3, -rotate-2, -rotate-1
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Rotate X/Y (NEW in v4)
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 rotate-x-0, rotate-x-1, rotate-x-2, rotate-x-3, rotate-x-6, rotate-x-12, rotate-x-45, rotate-x-90, rotate-x-180, -rotate-x-180, -rotate-x-90, -rotate-x-45, -rotate-x-12, -rotate-x-6, -rotate-x-3, -rotate-x-2, -rotate-x-1
 rotate-y-0, rotate-y-1, rotate-y-2, rotate-y-3, rotate-y-6, rotate-y-12, rotate-y-45, rotate-y-90, rotate-y-180, -rotate-y-180, -rotate-y-90, -rotate-y-45, -rotate-y-12, -rotate-y-6, -rotate-y-3, -rotate-y-2, -rotate-y-1
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Translate
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 translate-x-0, translate-x-px, translate-x-0.5, translate-x-1, translate-x-1.5, translate-x-2, translate-x-2.5, translate-x-3, translate-x-3.5, translate-x-4, translate-x-5, translate-x-6, translate-x-7, translate-x-8, translate-x-9, translate-x-10, translate-x-11, translate-x-12, translate-x-14, translate-x-16, translate-x-20, translate-x-24, translate-x-28, translate-x-32, translate-x-36, translate-x-40, translate-x-44, translate-x-48, translate-x-52, translate-x-56, translate-x-60, translate-x-64, translate-x-72, translate-x-80, translate-x-96, translate-x-1/2, translate-x-1/3, translate-x-2/3, translate-x-1/4, translate-x-2/4, translate-x-3/4, translate-x-full
 translate-y-0, translate-y-px, translate-y-0.5, translate-y-1, translate-y-1.5, translate-y-2, translate-y-2.5, translate-y-3, translate-y-3.5, translate-y-4, translate-y-5, translate-y-6, translate-y-7, translate-y-8, translate-y-9, translate-y-10, translate-y-11, translate-y-12, translate-y-14, translate-y-16, translate-y-20, translate-y-24, translate-y-28, translate-y-32, translate-y-36, translate-y-40, translate-y-44, translate-y-48, translate-y-52, translate-y-56, translate-y-60, translate-y-64, translate-y-72, translate-y-80, translate-y-96, translate-y-1/2, translate-y-1/3, translate-y-2/3, translate-y-1/4, translate-y-2/4, translate-y-3/4, translate-y-full
 ```
 
+<!-- markdownlint-enable MD013 -->
+
 #### Translate Z (NEW in v4)
+
+<!-- markdownlint-disable MD013 -->
 
 ```text
 translate-z-0, translate-z-px, translate-z-0.5, translate-z-1, translate-z-1.5, translate-z-2, translate-z-2.5, translate-z-3, translate-z-3.5, translate-z-4, translate-z-5, translate-z-6, translate-z-7, translate-z-8, translate-z-9, translate-z-10, translate-z-11, translate-z-12, translate-z-14, translate-z-16, translate-z-20, translate-z-24, translate-z-28, translate-z-32, translate-z-36, translate-z-40, translate-z-44, translate-z-48, translate-z-52, translate-z-56, translate-z-60, translate-z-64, translate-z-72, translate-z-80, translate-z-96
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Skew
 
@@ -1158,9 +1306,13 @@ skew-y-0, skew-y-1, skew-y-2, skew-y-3, skew-y-6, skew-y-12, -skew-y-12, -skew-y
 
 #### Transform Origin
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 origin-center, origin-top, origin-top-right, origin-right, origin-bottom-right, origin-bottom, origin-bottom-left, origin-left, origin-top-left
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Transform Style (NEW in v4)
 
@@ -1176,9 +1328,13 @@ perspective-none, perspective-250, perspective-500, perspective-750, perspective
 
 #### Perspective Origin (NEW in v4)
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 perspective-origin-center, perspective-origin-top, perspective-origin-top-right, perspective-origin-right, perspective-origin-bottom-right, perspective-origin-bottom, perspective-origin-bottom-left, perspective-origin-left, perspective-origin-top-left
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 ### Interactivity
 
@@ -1197,9 +1353,13 @@ appearance-none, appearance-auto
 
 #### Cursor
 
+<!-- markdownlint-disable MD013 -->
+
 ```text
 cursor-auto, cursor-default, cursor-pointer, cursor-wait, cursor-text, cursor-move, cursor-help, cursor-not-allowed, cursor-none, cursor-context-menu, cursor-progress, cursor-cell, cursor-crosshair, cursor-vertical-text, cursor-alias, cursor-copy, cursor-no-drop, cursor-grab, cursor-grabbing, cursor-all-scroll, cursor-col-resize, cursor-row-resize, cursor-n-resize, cursor-e-resize, cursor-s-resize, cursor-w-resize, cursor-ne-resize, cursor-nw-resize, cursor-se-resize, cursor-sw-resize, cursor-ew-resize, cursor-ns-resize, cursor-nesw-resize, cursor-nwse-resize, cursor-zoom-in, cursor-zoom-out
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 #### Caret Colour
 

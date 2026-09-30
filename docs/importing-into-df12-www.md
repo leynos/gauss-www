@@ -23,6 +23,8 @@ the existing `sites:` mapping in `config/pages.yaml`.
 Add a Gauss CSS build beside the existing mxd entrypoint in
 `df12-www/package.json`:
 
+<!-- markdownlint-disable MD013 -->
+
 ```json
 {
   "scripts": {
@@ -31,6 +33,8 @@ Add a Gauss CSS build beside the existing mxd entrypoint in
   }
 }
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 The stylesheet uses CSS-first Tailwind v4 configuration, explicit `@source`
 discovery for Jinja, and a custom daisyUI v5 theme. Do not add a
