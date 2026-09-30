@@ -179,3 +179,14 @@ Run `make markdownlint` and `make nixie` for prose changes.
 Write an imperative summary under 72 characters, with no conventional-commit
 prefix or trailing full stop. Explain what changed and why in a wrapped body
 when useful. Do not add generated-tool attribution trailers.
+
+## Markdown formatting
+
+`make fmt` and `make check-fmt` run `mdtablefix` 0.6.1 or later over the
+Markdown files Git tracks plus untracked files it does not ignore, with
+`--wrap --renumber --breaks --ellipsis --fences`. Install it with
+`cargo binstall --no-confirm mdtablefix@0.6.1` or
+`cargo install --locked mdtablefix@0.6.1`. `make fmt` then runs
+`markdownlint-cli2 --fix`, and the `markdownlint` workflow lints `**/*.md` with
+the pinned markdownlint-cli2-action. Concordat's `markdown-formatting-baseline`
+rule audits this wiring.
