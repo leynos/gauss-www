@@ -246,8 +246,8 @@ representations of the same document.
 - Do not claim unrestricted, perfect, or lossless round-tripping beyond tested
   SVG fixtures and supported syntax.
 
-**Evidence:** ADRs 004 and 005; architecture section 10; roadmap sections 0.2.3,
-0.4, and 1.7.
+**Evidence:** ADRs 004 and 005; architecture section 10; roadmap sections
+0.2.3, 0.4, and 1.7.
 
 #### 1.5 Accessibility is an architecture decision — `#accessibility`
 
@@ -376,11 +376,8 @@ status, phase, evidence link, and last-reviewed fields; a foundation timeline;
 and links to accepted ADRs. One status record should drive both this route and
 the homepage summary.
 
-**Internal links:** [Overview](#1-overview--gauss),
-[Drawing](#12-drawing-should-still-feel-like-drawing--drawing),
-[Architecture](#13-one-document-every-way-in--architecture),
-[SVG](#14-the-file-is-already-yours--file),
-[Accessibility](#15-accessibility-is-an-architecture-decision--accessibility),
+**Internal links:**
+[Overview](#1-overview--gauss), [Drawing](#12-drawing-should-still-feel-like-drawing--drawing), [Architecture](#13-one-document-every-way-in--architecture), [SVG](#14-the-file-is-already-yours--file), [Accessibility](#15-accessibility-is-an-architecture-decision--accessibility),
 and [Automation](#16-if-it-can-be-clicked-it-should-be-callable--automation).
 
 ### 3. Terms of use — `/gauss/terms-of-use/`
@@ -488,8 +485,8 @@ version, scope, and known limitation. Avoid compliance theatre.
 
 **Purpose:** Document the released scripting and command surface.
 
-**Goal:** Let developers automate a real document edit using stable,
-copyable examples.
+**Goal:** Let developers automate a real document edit using stable, copyable
+examples.
 
 **Constraints:** Promote only after RustPython integration or another public
 automation boundary ships. Examples must execute in validation, call public
@@ -544,7 +541,7 @@ records rather than maintaining parallel status prose.
 - Use British English with Oxford spelling. Keep claims short, technical, and
   sourced.
 - Do not use Adobe Illustrator as a visual template or imply trademarked
-  product endorsement. The feature plan's parity target is roadmap context,
-  not the public proposition.
+  product endorsement. The feature plan's parity target is roadmap context, not
+  the public proposition.
 - Do not create documentation routes merely to mirror repository files. A web
   page must answer a visitor need that raw engineering documentation does not.

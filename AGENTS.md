@@ -31,12 +31,12 @@ Never edit `.preview/`, `public/`, or compiled CSS by hand.
 
 ## Preserve the import boundary
 
-| This repository | Destination in `df12-www` |
-| --- | --- |
-| `config/gauss.yaml` | `config/pages.yaml` beneath `sites:` |
-| `templates/gauss/` | `templates/gauss/` |
-| `src/styles/gauss.css` | `src/styles/gauss.css` |
-| `src/static/gauss/` | `src/static/gauss/` |
+| This repository        | Destination in `df12-www`            |
+| ---------------------- | ------------------------------------ |
+| `config/gauss.yaml`    | `config/pages.yaml` beneath `sites:` |
+| `templates/gauss/`     | `templates/gauss/`                   |
+| `src/styles/gauss.css` | `src/styles/gauss.css`               |
+| `src/static/gauss/`    | `src/static/gauss/`                  |
 
 The parent build must compile `src/styles/gauss.css` to
 `public/gauss/assets/tailwind.css`. Do not import `.build/`; it exists only for
@@ -84,9 +84,9 @@ classes in markup. Keep selector specificity low and let local utilities win.
 Do not add `tailwind.config.js`; Tailwind v4 configuration is CSS-first.
 
 Use semantic colour roles such as `primary`, `base-100`, and `success` rather
-than literal palette utilities. Every `*-content` pairing must meet its contrast
-requirement. Keep required assets self-hosted; the published subsite must not
-depend on third-party browser requests.
+than literal palette utilities. Every `*-content` pairing must meet its
+contrast requirement. Keep required assets self-hosted; the published subsite
+must not depend on third-party browser requests.
 
 ## Gauss visual boundaries
 
@@ -103,7 +103,8 @@ production software.
 
 Treat `references/design-sample.png` as a hierarchy and interaction reference,
 not a pixel specification or evidence that every labelled capability ships.
-Verify all `SHIPPED`, `PARTIAL`, and `PLANNED` claims against current Gauss code.
+Verify all `SHIPPED`, `PARTIAL`, and `PLANNED` claims against current Gauss
+code.
 
 ## Content and templates
 
@@ -166,9 +167,10 @@ keyboard path, and run an axe-core WCAG 2.2 AA audit.
 
 ## Documentation
 
-Keep [the import guide](docs/importing-into-df12-www.md) aligned with the source
-mapping and parent build procedure. Update the design brief when implementation
-decisions settle open questions rather than allowing the two to drift.
+Keep [the import guide](docs/importing-into-df12-www.md) aligned with the
+source mapping and parent build procedure. Update the design brief when
+implementation decisions settle open questions rather than allowing the two to
+drift.
 
 Run `make markdownlint` and `make nixie` for prose changes.
 

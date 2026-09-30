@@ -2,15 +2,23 @@
 
 ## 1. Project
 
-Create a product website for **Gauss**, the open-source vector illustration application at `leynos/gauss`, as a new df12 Productions sub-site at `/gauss/`.
+Create a product website for **Gauss**, the open-source vector illustration
+application at `leynos/gauss`, as a new df12 Productions sub-site at `/gauss/`.
 
-Gauss is currently a Phase 0 proof of concept built in Rust with GPUI. The working application supports path drawing and manipulation, SVG import/export, styling, undo/redo, and separate selection history.
+Gauss is currently a Phase 0 proof of concept built in Rust with GPUI. The
+working application supports path drawing and manipulation, SVG import/export,
+styling, undo/redo, and separate selection history.
 
-The larger product direction is substantially more ambitious: a professional SVG illustration environment in which accessibility, localizability, performance, and pervasive scripting form part of the architecture from the beginning. The roadmap targets Illustrator 10-level breadth while explicitly avoiding a bolt-on approach to accessibility or automation.
+The larger product direction is substantially more ambitious: a professional
+SVG illustration environment in which accessibility, localizability,
+performance, and pervasive scripting form part of the architecture from the
+beginning. The roadmap targets Illustrator 10-level breadth while explicitly
+avoiding a bolt-on approach to accessibility or automation.
 
-The website should therefore present **the product Gauss is becoming without pretending that the roadmap has already shipped**.
+The website should therefore present **the product Gauss is becoming without
+pretending that the roadmap has already shipped**.
 
----
+______________________________________________________________________
 
 ## 2. Core positioning
 
@@ -36,7 +44,8 @@ The site should unpack three consequences:
    SVG is a first-class interchange format rather than an export afterthought.
 
 2. **Open interface**
-   Accessibility and keyboard operation belong in the application architecture rather than a compatibility layer added later.
+   Accessibility and keyboard operation belong in the application architecture
+   rather than a compatibility layer added later.
 
 3. **Open automation**
    User-visible operations should gain scriptable equivalents, allowing
@@ -84,28 +93,37 @@ Below the CTAs, show an explicit status rail:
 
 Do not bury the development status in a roadmap page.
 
----
+______________________________________________________________________
 
 ## 3. Relationship to the existing df12 sites
 
-Gauss should belong unmistakably to df12 without inheriting a generic df12 product template.
+Gauss should belong unmistakably to df12 without inheriting a generic df12
+product template.
 
 The existing product sites establish a useful pattern:
 
-- **Netsuke** turns its build-system concept into tactile Japanese craft, carved wood and careful material detail.
-- **Weaver** translates code-agent infrastructure into blueprint, loom and architectural drawing language.
-- **mxd** combines protocol engineering with a railway/night-travel visual system and exposes implementation status rather than disguising incomplete compatibility.
-- **Stilyagi** uses a highly individual editorial/poster language while organizing substantial technical material underneath it.
+- **Netsuke** turns its build-system concept into tactile Japanese craft,
+  carved wood and careful material detail.
+- **Weaver** translates code-agent infrastructure into blueprint, loom and
+  architectural drawing language.
+- **mxd** combines protocol engineering with a railway/night-travel visual
+  system and exposes implementation status rather than disguising incomplete
+  compatibility.
+- **Stilyagi** uses a highly individual editorial/poster language while
+  organizing substantial technical material underneath it.
 
-The common df12 grammar is therefore not shared colours or interchangeable cards. It is:
+The common df12 grammar is therefore not shared colours or interchangeable
+cards. It is:
 
-**strong metaphor + serious technical substance + unusually specific copy + visible engineering evidence.**
+**strong metaphor + serious technical substance + unusually specific copy +
+visible engineering evidence.**
 
-That also fits the parent site, whose stated identity is “Serious tools, playful worlds” and “Fast, elegant, and open by design.”
+That also fits the parent site, whose stated identity is “Serious tools,
+playful worlds” and “Fast, elegant, and open by design.”
 
 Gauss should be the **precision instrument** in that collection.
 
----
+______________________________________________________________________
 
 ## 4. Creative concept: The visible vector
 
@@ -127,8 +145,8 @@ normal-distribution curves.
 
 The current df12 home page contains the starting logo proposal in
 `../df12-www/df12_pages/templates/home_page.jinja`: a single arched Bézier, a
-filled node at its apex, and a baseline. Adopt that mark rather than inventing a
-new `G` or path-and-node icon for the sub-site.
+filled node at its apex, and a baseline. Adopt that mark rather than inventing
+a new `G` or path-and-node icon for the sub-site.
 
 The proposal carries enough of the Gaussian reference on its own. Keep it
 compact and monochrome in the header, favicon, and parent-site card. Do not
@@ -184,7 +202,7 @@ fixed-pixel specification. Responsive behaviour, real content, accessible
 semantics, and the vector-illustration identity take priority over literal
 tracing.
 
----
+______________________________________________________________________
 
 ## 5. Hero art direction
 
@@ -222,7 +240,7 @@ when those capabilities become real.
 
 That makes the homepage itself a quiet visual changelog.
 
----
+______________________________________________________________________
 
 ## 6. Signature visual motif
 
@@ -232,9 +250,7 @@ For example, a broad cobalt curve might enter from the left edge, pass through
 two visible nodes, and leave at the lower right. Handles, coordinates, and
 alignment marks can appear around it:
 
-`P₀  124,86`
-`C₁  212,28`
-`C₂  376,240`
+`P₀  124,86` `C₁  212,28` `C₂  376,240`
 
 The curve can reappear throughout the site in different states:
 
@@ -243,9 +259,10 @@ The curve can reappear throughout the site in different states:
 - SVG path text in scripting sections;
 - highlighted accessible object in accessibility sections.
 
-It becomes a metaphor for the central thesis: **the object is the same even when the interface onto it changes.**
+It becomes a metaphor for the central thesis: **the object is the same even
+when the interface onto it changes.**
 
----
+______________________________________________________________________
 
 ## 7. Colour system
 
@@ -257,32 +274,28 @@ paper.
 
 #### Canvas white
 
-`#FCFCFD`
-Primary background. It should read as a digital canvas, not cream stock,
-parchment, or recycled paper.
+`#FCFCFD` Primary background. It should read as a digital canvas, not cream
+stock, parchment, or recycled paper.
 
 #### Graphite
 
-`#1E2428`
-Primary text, rules and technical marks.
+`#1E2428` Primary text, rules and technical marks.
 
 #### Cobalt
 
-`#2457C5`
-Selected paths, active representation tabs, primary actions, and links. Cobalt
-must never be the sole link cue; retain underlines or another persistent
-affordance where links appear in prose.
+`#2457C5` Selected paths, active representation tabs, primary actions, and
+links. Cobalt must never be the sole link cue; retain underlines or another
+persistent affordance where links appear in prose.
 
 #### Vermilion
 
-`#E85131`
-Anchor points, warnings and expressive accents. Use decoratively or for large text rather than normal small text on the pale background.
+`#E85131` Anchor points, warnings and expressive accents. Use decoratively or
+for large text rather than normal small text on the pale background.
 
 #### Instrument green
 
-`#5FAF72`
-Verified `SHIPPED` states and successful checks. Pair the colour with a written
-status label.
+`#5FAF72` Verified `SHIPPED` states and successful checks. Pair the colour with
+a written status label.
 
 #### Status amber
 
@@ -294,10 +307,12 @@ lines and the written label.
 A family of cool greys for inactive paths, alignment guides, dividers, and
 disabled interface elements. Do not assemble them into a page-wide grid.
 
-Avoid rainbow-colouring every feature. The page should feel like an illustration
-canvas with a few editor overlays, not a packet of Stabilos detonating.
+Avoid rainbow-colouring every feature. The page should feel like an
+illustration canvas with a few editor overlays, not a packet of Stabilos
+detonating.
 
-Dark sections may invert paper and graphite for code or architecture diagrams, but the main page should remain predominantly light.
+Dark sections may invert paper and graphite for code or architecture diagrams,
+but the main page should remain predominantly light.
 
 ### Keyboard focus
 
@@ -310,7 +325,7 @@ for keyboard focus. Selection is cobalt geometry; focus is an offset perimeter.
 The distinction must survive greyscale, screenshots, and colour-vision
 deficiencies.
 
----
+______________________________________________________________________
 
 ## 8. Typography
 
@@ -328,7 +343,8 @@ a mathematical journal or editorial spread.
 
 #### IBM Plex Sans
 
-Neutral, technical and highly legible. Use for body copy, navigation and explanatory labels.
+Neutral, technical and highly legible. Use for body copy, navigation and
+explanatory labels.
 
 ### Code and coordinates
 
@@ -337,13 +353,13 @@ Neutral, technical and highly legible. Use for body copy, navigation and explana
 Use for SVG, coordinates, commands, status metadata, and small editor
 annotations.
 
-Typography should have the confidence to become very large. A hero with a
-72–96 px serif headline beside small 11–12 px path annotations will give the
-page the scale contrast seen elsewhere in the df12 family without reproducing
-another site's aesthetic. Keep the typography subordinate to the specimen; the
-page is not a desktop-publishing demonstration.
+Typography should have the confidence to become very large. A hero with a 72–96
+px serif headline beside small 11–12 px path annotations will give the page the
+scale contrast seen elsewhere in the df12 family without reproducing another
+site's aesthetic. Keep the typography subordinate to the specimen; the page is
+not a desktop-publishing demonstration.
 
----
+______________________________________________________________________
 
 ## 9. Page structure
 
@@ -351,12 +367,7 @@ page is not a desktop-publishing demonstration.
 
 Launch navigation:
 
-`Gauss`
-`Why`
-`Drawing`
-`Architecture`
-`Roadmap`
-`GitHub`
+`Gauss` `Why` `Drawing` `Architecture` `Roadmap` `GitHub`
 
 `Why`, `Drawing`, and `Architecture` are homepage anchors. `Roadmap` may be a
 separate route once it has enough substance. `GitHub` is external and must use
@@ -374,7 +385,7 @@ Pair the existing arched-curve mark with a restrained `Gauss` wordmark. Do not
 add nodes to the letterforms; the standalone mark already carries the vector
 construction idea.
 
----
+______________________________________________________________________
 
 ### B. Hero
 
@@ -394,7 +405,7 @@ The first viewport must answer five questions immediately:
 - How mature is it?
 - Where can I inspect the code?
 
----
+______________________________________________________________________
 
 ### C. Drawing should still feel like drawing
 
@@ -422,7 +433,7 @@ Suggested copy:
 The screenshot is evidence, not decoration. Keep its chrome here, where it
 answers what using Gauss feels like.
 
----
+______________________________________________________________________
 
 ### D. One document. Every way in
 
@@ -453,15 +464,15 @@ The launch baseline should be treated as:
 - SVG import and export – `SHIPPED`;
 - plug-ins – `PLANNED`.
 
-Verify every label against the current Gauss repository before publication.
-The labels in `design-sample.png` demonstrate the visual grammar, not product
+Verify every label against the current Gauss repository before publication. The
+labels in `design-sample.png` demonstrate the visual grammar, not product
 evidence.
 
 The proposition is architectural: every interface must meet the same document
 and command model. The diagram can become progressively live as each port
 ships, without changing the page's argument.
 
----
+______________________________________________________________________
 
 ## 10. The file is already yours
 
@@ -477,13 +488,16 @@ Follow the sample's side-by-side composition:
 - a highlighted `<path>` corresponding to the selected visual object;
 - a line connecting the selected node to its `d=` path data.
 
-Copy should emphasize interoperability and legibility rather than ideological purity.
+Copy should emphasize interoperability and legibility rather than ideological
+purity.
 
-Gauss already imports and exports SVG in the proof of concept, so this is something the site can demonstrate rather than merely promise.
+Gauss already imports and exports SVG in the proof of concept, so this is
+something the site can demonstrate rather than merely promise.
 
-Avoid claims such as “perfect SVG round-tripping” unless tests and implementation actually justify them.
+Avoid claims such as “perfect SVG round-tripping” unless tests and
+implementation actually justify them.
 
----
+______________________________________________________________________
 
 ## 11. Accessibility section
 
@@ -496,12 +510,7 @@ accessibility. Keep it prominent without presenting planned work as shipped.
 
 Visually show several layers:
 
-`APPLICATION COMMAND`
-↓
-`SEMANTIC ACTION`
-↓
-`ACCESSKIT`
-↓
+`APPLICATION COMMAND` ↓ `SEMANTIC ACTION` ↓ `ACCESSKIT` ↓
 `PLATFORM ACCESSIBILITY API`
 
 Beside it, show keyboard navigation and the offset double-rule focus treatment
@@ -512,8 +521,10 @@ Key messages:
 - semantic roles and labels begin with the UI foundation;
 - keyboard-only operation is a design constraint;
 - platform accessibility comes through AccessKit;
-- object-level accessible editing can expand progressively as the document model grows;
-- localization follows the same principle of being structural rather than retrofitted.
+- object-level accessible editing can expand progressively as the document
+  model grows;
+- localization follows the same principle of being structural rather than
+  retrofitted.
 
 This is a much more credible claim than plastering the page with WCAG logos.
 
@@ -521,7 +532,7 @@ The website itself must exemplify this standard. Treat the sample's “Designed
 for accessibility” status-rail item as intent; every public capability claim
 still requires evidence from the current build.
 
----
+______________________________________________________________________
 
 ## 12. Automation and scripting section
 
@@ -542,12 +553,13 @@ commands. Until a scripting API exists, label all syntax `ILLUSTRATIVE` and
 avoid presenting invented Python as documentation.
 
 Explain that scriptability should emerge from the command architecture itself.
-Future natural-language or agent control can then sit above a deterministic
-API rather than operating the GUI by imitation.
+Future natural-language or agent control can then sit above a deterministic API
+rather than operating the GUI by imitation.
 
-Do not market Gauss as “AI-powered”. The interesting architectural choice is that an AI does **not** need privileged access.
+Do not market Gauss as “AI-powered”. The interesting architectural choice is
+that an AI does **not** need privileged access.
 
----
+______________________________________________________________________
 
 ## 13. Architecture section
 
@@ -567,10 +579,7 @@ This section deepens the document-model diagram rather than repeating it. Show:
 
 with cross-cutting rails for:
 
-`AccessKit`
-`localization`
-`scripting`
-`history`
+`AccessKit` `localization` `scripting` `history`
 
 Draw the relationships with the same paths, nodes, handles, and alignment cues
 used elsewhere on the page. Avoid blueprint styling, building-plan notation,
@@ -580,9 +589,11 @@ A compact technology rail can identify:
 
 `Rust` · `GPUI` · `AccessKit` · `SVG`
 
-Avoid making the implementation language the hero. “Written in Rust” supports the story of a responsive and maintainable native application, but users do not choose a drawing program because Cargo.toml is particularly fetching.
+Avoid making the implementation language the hero. “Written in Rust” supports
+the story of a responsive and maintainable native application, but users do not
+choose a drawing program because Cargo.toml is particularly fetching.
 
----
+______________________________________________________________________
 
 ## 14. Current state and roadmap
 
@@ -603,9 +614,9 @@ Use only verified capabilities from the current repository, such as:
 
 ### In progress
 
-Write this by hand as product copy and review it with each site release. Link to
-active GitHub issues for detail, but do not import issue titles into the page.
-Issue labels and titles are implementation records, not durable product
+Write this by hand as product copy and review it with each site release. Link
+to active GitHub issues for detail, but do not import issue titles into the
+page. Issue labels and titles are implementation records, not durable product
 language.
 
 ### Direction
@@ -617,36 +628,39 @@ language.
 - deeper document accessibility;
 - expanded platform coverage.
 
-Do not turn the roadmap into a feature-checkbox arms race. Group it by product capability.
+Do not turn the roadmap into a feature-checkbox arms race. Group it by product
+capability.
 
 Show a visible “Last reviewed” date if the roadmap has its own route. Stale
 status must be obvious rather than quietly masquerading as current state.
 
----
+______________________________________________________________________
 
 ## 15. Getting started
 
-Because Gauss remains early-stage software, this section should be aimed at **contributors and experimenters**, not pretend there is already a frictionless consumer installer.
+Because Gauss remains early-stage software, this section should be aimed at
+**contributors and experimenters**, not pretend there is already a frictionless
+consumer installer.
 
 Suggested copy:
 
 > **Try the instrument while we're still building it.**
 
-Show the actual build/run command from the current repository and supported host requirements. The README currently identifies macOS and Linux as GPUI's supported targets for the proof of concept.
+Show the actual build/run command from the current repository and supported
+host requirements. The README currently identifies macOS and Linux as GPUI's
+supported targets for the proof of concept.
 
 CTAs:
 
-`Build Gauss`
-`Read the roadmap`
-`Browse the source`
+`Build Gauss` `Read the roadmap` `Browse the source`
 
 Present these as the three closing actions shown in the sample. Use descriptive
-link labels – `Build Gauss from source`, `Read the Gauss roadmap`, and `Browse
-Gauss on GitHub` – rather than repeating generic “Learn more” links.
+link labels – `Build Gauss from source`, `Read the Gauss roadmap`, and
+`Browse Gauss on GitHub` – rather than repeating generic “Learn more” links.
 
 Eventually this becomes `Download Gauss` when packaged releases justify it.
 
----
+______________________________________________________________________
 
 ## 16. Motion and interaction
 
@@ -670,14 +684,15 @@ every interactive demonstration, and make all representations available in the
 document object model (DOM) rather than painting inaccessible spectacle onto a
 canvas.
 
----
+______________________________________________________________________
 
 ## 17. Responsive behaviour
 
 Desktop can lean into a spacious vector-workspace composition with local path
 annotations, generous white space, and asymmetry around the specimen.
 
-Tablet should preserve the same hierarchy while moving annotations closer to their subject.
+Tablet should preserve the same hierarchy while moving annotations closer to
+their subject.
 
 Mobile should become a clean visual column. Do not preserve every alignment
 mark or path annotation on a 390 px screen.
@@ -693,9 +708,10 @@ document model or replace the visual diagram with an equivalent ordered text
 view. Never shrink labels below a readable size to preserve the desktop
 composition.
 
-No horizontal scrolling should be required for the page itself. Code examples may scroll within their own labelled region.
+No horizontal scrolling should be required for the page itself. Code examples
+may scroll within their own labelled region.
 
----
+______________________________________________________________________
 
 ## 18. Accessibility requirements for the website
 
@@ -723,15 +739,17 @@ support arrow-key movement, preserve a logical focus order, and expose the same
 information without motion. The architecture diagram needs adjacent prose that
 states every port and status; its lines and colours are supplementary.
 
-The accessibility section should itself work exceptionally well with a screen reader. That detail will say more than any manifesto paragraph.
+The accessibility section should itself work exceptionally well with a screen
+reader. That detail will say more than any manifesto paragraph.
 
----
+______________________________________________________________________
 
 ## 19. Things to avoid
 
 ### Do not imitate Illustrator
 
-Illustrator 10 parity is a roadmap benchmark, not an invitation to reproduce Adobe's trade dress.
+Illustrator 10 parity is a roadmap benchmark, not an invitation to reproduce
+Adobe's trade dress.
 
 Gauss should look like Gauss.
 
@@ -755,10 +773,9 @@ sheet waiting for the press.
 
 ### Avoid generic SaaS aesthetics
 
-No glowing orb behind a laptop.
-No endless purple-to-blue gradients.
-No floating glass cards containing meaningless graphs.
-No “Revolutionize your creative workflow”.
+No glowing orb behind a laptop. No endless purple-to-blue gradients. No
+floating glass cards containing meaningless graphs. No “Revolutionize your
+creative workflow”.
 
 Gauss is a precision drawing instrument. Let it look specific.
 
@@ -775,23 +792,28 @@ current Gauss repository before release.
 
 ### Do not overclaim accessibility
 
-“Accessibility from day one” is a defensible architectural statement. “Fully accessible professional vector editing” is a product claim that must wait for implementation evidence.
+“Accessibility from day one” is a defensible architectural statement. “Fully
+accessible professional vector editing” is a product claim that must wait for
+implementation evidence.
 
 ### Do not overclaim scripting
 
-Until the scripting layer ships, explain the architecture and roadmap rather than presenting mock Python as a current API.
+Until the scripting layer ships, explain the architecture and roadmap rather
+than presenting mock Python as a current API.
 
 ### Avoid AI-first positioning
 
-Potential LLM control belongs downstream of the scripting model. The site's story should remain about open, deterministic interfaces.
+Potential LLM control belongs downstream of the scripting model. The site's
+story should remain about open, deterministic interfaces.
 
----
+______________________________________________________________________
 
 ## 20. df12 integration
 
 The existing df12 home configuration already contains a Gauss card described as:
 
-> “Accessible SVG illustration with scriptable precision. Illustrator for the open web.”
+> “Accessible SVG illustration with scriptable precision. Illustrator for the
+> open web.”
 
 and currently links directly to GitHub.
 
@@ -807,19 +829,23 @@ editor.
 
 Use:
 
-> **Accessible, scriptable SVG illustration. Precision drawing on an open stack.**
+> **Accessible, scriptable SVG illustration. Precision drawing on an open
+> stack.**
 
 “Vector illustration without a privileged interface” may become a strong short
 descriptor once the product identity has enough context. It should not
 introduce the concept cold on the parent grid.
 
----
+______________________________________________________________________
 
 ## 21. Implementation approach
 
-Implement Gauss as a first-class df12 sub-site rather than a standalone microsite.
+Implement Gauss as a first-class df12 sub-site rather than a standalone
+microsite.
 
-The df12 generator already treats sub-site templates and product-specific static assets separately: templates live beneath `templates/<site>/`, while hand-crafted assets mirror their published paths under `src/static/`.
+The df12 generator already treats sub-site templates and product-specific
+static assets separately: templates live beneath `templates/<site>/`, while
+hand-crafted assets mirror their published paths under `src/static/`.
 
 Recommended shape:
 
@@ -843,7 +869,9 @@ src/styles/
     gauss.css
 ```
 
-Prefer the current build-time CSS pipeline rather than copying the older Tailwind-CDN arrangement used by Netsuke and Weaver. The df12 developer guide specifically calls out those older sub-sites' CDN-related cascade quirks.
+Prefer the current build-time CSS pipeline rather than copying the older
+Tailwind-CDN arrangement used by Netsuke and Weaver. The df12 developer guide
+specifically calls out those older sub-sites' CDN-related cascade quirks.
 
 Keep `Why`, `Drawing`, and `Architecture` as homepage sections at launch. Add
 new templates only when their routes contain material that does more than
@@ -853,7 +881,7 @@ Keep JavaScript progressive and small. The hero should still communicate the
 product if all enhancement scripts fail. Without JavaScript, show the artwork
 representation first and provide direct links to the specimen SVG and source.
 
----
+______________________________________________________________________
 
 ## 22. Initial deliverables
 
@@ -882,7 +910,7 @@ Do not create placeholder deep routes for Architecture, Accessibility, or
 Automation. Their homepage sections should earn those routes through
 substantive future material.
 
----
+______________________________________________________________________
 
 ## 23. Desired impression
 
@@ -893,7 +921,8 @@ The five-second reading should be:
 
 A visitor should leave thinking:
 
-> **This is not merely another open-source drawing program. Someone is reconsidering what the interface to a vector document ought to be.**
+> **This is not merely another open-source drawing program. Someone is
+> reconsidering what the interface to a vector document ought to be.**
 
 The site should feel precise, visually literate, and slightly obsessive about
 structure.
@@ -903,7 +932,8 @@ not only architecture.
 
 A developer should want to inspect the architecture.
 
-An accessibility specialist should recognize that they have been invited into the design process before the concrete has set.
+An accessibility specialist should recognize that they have been invited into
+the design process before the concrete has set.
 
 The primary first click should be `Explore Gauss`; `Build from source` and
 GitHub remain obvious alternatives for contributors.
