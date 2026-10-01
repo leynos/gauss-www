@@ -8,12 +8,12 @@ renderer or browser runtime.
 
 ## Source mapping
 
-| This repository | df12-www destination | Role |
-| --- | --- | --- |
-| `config/gauss.yaml` | `config/pages.yaml` beneath `sites:` | Routes, navigation, and template variables |
-| `templates/gauss/` | `templates/gauss/` | Homepage, roadmap, shared chrome, and legal wrapper |
-| `src/styles/gauss.css` | `src/styles/gauss.css` | Tailwind v4 and daisyUI v5 entrypoint |
-| `src/static/gauss/` | `src/static/gauss/` | Logo and future self-hosted assets |
+| This repository        | df12-www destination                 | Role                                                |
+| ---------------------- | ------------------------------------ | --------------------------------------------------- |
+| `config/gauss.yaml`    | `config/pages.yaml` beneath `sites:` | Routes, navigation, and template variables          |
+| `templates/gauss/`     | `templates/gauss/`                   | Homepage, roadmap, shared chrome, and legal wrapper |
+| `src/styles/gauss.css` | `src/styles/gauss.css`               | Tailwind v4 and daisyUI v5 entrypoint               |
+| `src/static/gauss/`    | `src/static/gauss/`                  | Logo and future self-hosted assets                  |
 
 The configuration file contains the `gauss:` mapping itself. Merge it beneath
 the existing `sites:` mapping in `config/pages.yaml`.
@@ -23,6 +23,8 @@ the existing `sites:` mapping in `config/pages.yaml`.
 Add a Gauss CSS build beside the existing mxd entrypoint in
 `df12-www/package.json`:
 
+<!-- markdownlint-disable MD013 -->
+
 ```json
 {
   "scripts": {
@@ -31,6 +33,8 @@ Add a Gauss CSS build beside the existing mxd entrypoint in
   }
 }
 ```
+
+<!-- markdownlint-enable MD013 -->
 
 The stylesheet uses CSS-first Tailwind v4 configuration, explicit `@source`
 discovery for Jinja, and a custom daisyUI v5 theme. Do not add a
@@ -65,8 +69,8 @@ make preview
 ```
 
 The build compiles CSS to `.build/`, composes temporary parent configuration,
-and renders to `.preview/gauss/`. It does not modify `../df12-www` or write to a
-tracked generated tree.
+and renders to `.preview/gauss/`. It does not modify `../df12-www` or write to
+a tracked generated tree.
 
 Serve the result with:
 
